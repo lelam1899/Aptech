@@ -10,7 +10,7 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
     }
-    public int showQuantity() {
+    public int showQuantity(){
         return this.quantity;
     }
 }

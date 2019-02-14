@@ -14,7 +14,7 @@ public class Order {
             listProduct.add(p);
             this.total += p.price;
         } else {
-            System.out.println(p.name + " is out.");
+            System.out.println(p.name + " het hang");
         }
 
     }  public void addProduct(Product p, int discount) {
