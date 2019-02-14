@@ -1,3 +1,5 @@
+package ASM4;
+
 import java.util.ArrayList;
 
 public class Order {
@@ -22,7 +24,7 @@ public class Order {
             listProduct.add(p);
             this.total += p.price*discount/100;
         } else {
-            System.out.println("Product is out.");
+            System.out.println("ASM4.Product is out.");
         }
 
     }

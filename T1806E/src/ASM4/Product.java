@@ -1,3 +1,5 @@
+package ASM4;
+
 public class Product {
     public int id;
     public String name;
