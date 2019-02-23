@@ -12,6 +12,14 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
     }
+    public int getQty(){
+        return this.quantity;
+    }
+
+    public void setQty(int quantity){
+        this.quantity = quantity;
+    }
+
     public int showQuantity(){
         return this.quantity;
     }

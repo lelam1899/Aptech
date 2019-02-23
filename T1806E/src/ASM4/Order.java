@@ -15,6 +15,7 @@ public class Order {
         if(p.quantity > 0) {
             listProduct.add(p);
             this.total += p.price;
+            p.setQty(p.getQty()-1);
         } else {
             System.out.println(p.name + " het hang");
         }
@@ -22,9 +23,10 @@ public class Order {
     }  public void addProduct(Product p, int discount) {
         if(p.showQuantity() > 0) {
             listProduct.add(p);
-            this.total += p.price*discount/100;
+            this.total += p.price*(100-discount)/100;
+            p.setQty(p.getQty()-1);
         } else {
-            System.out.println("ASM4.Product is out.");
+            System.out.println(p.name+" het hang");
         }
 
     }
